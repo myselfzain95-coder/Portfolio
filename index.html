@@ -902,6 +902,17 @@ html, body{
 @media (max-width: 480px){
   .photo-frame{ max-width:220px; }
 }
+/* ---------- Fix grid item overflow (classic min-width:auto bug) ---------- */
+.about-grid,
+.about-text,
+.about-art{
+  min-width:0;
+}
+.about-text p,
+.about-text h2{
+  overflow-wrap:break-word;
+  word-break:break-word;
+}
 </style>
 </head>
 <body>
