@@ -873,19 +873,11 @@ body, html {
 img, svg, video{ max-width:100%; height:auto; }
 .hero-blob{ max-width:100vw; }
 /* ---------- Kill horizontal overflow globally ---------- */
-html{
+/* ---------- Kill horizontal overflow globally (safe version) ---------- */
+html, body{
   overflow-x:hidden;
-  max-width:100vw;
+  width:100%;
 }
-body{
-  max-width:100vw;
-}
-*{ max-width:100%; }
-.hero, .hero-inner, .wrap, section, header, nav{
-  max-width:100vw;
-  overflow-x:hidden;
-}
-
 /* ---------- Fix nav-right crowding on small phones ---------- */
 @media (max-width: 480px){
   nav{
