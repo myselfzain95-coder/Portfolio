@@ -913,6 +913,16 @@ html, body{
   overflow-wrap:break-word;
   word-break:break-word;
 }
+/* ---------- Fix graduation badge overflow on mobile ---------- */
+@media (max-width: 600px){
+  .about-text > .exp-period{
+    white-space:normal;
+    display:inline-flex;
+    flex-wrap:wrap;
+    max-width:100%;
+    line-height:1.5;
+  }
+}
 </style>
 </head>
 <body>
